@@ -1,0 +1,497 @@
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, sans-serif;
+}
+
+/* Default Dark Theme */
+.dashboard-container.dark {
+  min-height: 100vh;
+  background: linear-gradient(135deg, #1a1a1a 0%, #2c2c2c 100%);
+  color: #ffffff;
+  padding: 20px;
+}
+
+/* Light Theme */
+.dashboard-container.light {
+  min-height: 100vh;
+  background: linear-gradient(135deg, #e0e0e0 0%, #f5f5f5 100%);
+  color: #1a1a1a;
+  padding: 20px;
+}
+
+.dashboard-header.dark {
+  background-color: rgba(255, 255, 255, 0.05);
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.2);
+}
+
+.dashboard-header.light {
+  background-color: rgba(0, 0, 0, 0.05);
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+}
+
+.dashboard-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 15px 30px;
+  border-radius: 10px;
+  backdrop-filter: blur(10px);
+}
+
+.logo {
+  font-size: 24px;
+  font-weight: 700;
+}
+
+.logo.dark {
+  color: #ffffff;
+}
+
+.logo.light {
+  color: #1a1a1a;
+}
+
+.header-actions {
+  display: flex;
+  gap: 15px;
+}
+
+.toggle-button,
+.logout-button {
+  padding: 8px 16px;
+  font-size: 14px;
+  font-weight: 500;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: transform 0.1s ease, opacity 0.3s ease;
+}
+
+.toggle-button.dark,
+.logout-button.dark {
+  color: #ffffff;
+}
+
+.toggle-button.light,
+.logout-button.light {
+  color: #ffffff;
+}
+
+.toggle-button.dark {
+  background: linear-gradient(90deg, #bb86fc, #6200ea);
+}
+
+.toggle-button.light {
+  background: linear-gradient(90deg, #6200ea, #bb86fc);
+}
+
+.logout-button.dark {
+  background: linear-gradient(90deg, #ff6b6b, #ee4444);
+}
+
+.logout-button.light {
+  background: linear-gradient(90deg, #ee4444, #ff6b6b);
+}
+
+.toggle-button:hover,
+.logout-button:hover {
+  transform: scale(1.05);
+}
+
+.dashboard-main {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 30px 0;
+}
+
+.welcome-text.dark {
+  color: #e0e0e0;
+}
+
+.welcome-text.light {
+  color: #333333;
+}
+
+.welcome-text {
+  text-align: center;
+  font-size: 18px;
+  margin-bottom: 30px;
+}
+
+.url-form {
+  display: flex;
+  justify-content: center;
+  gap: 15px;
+  margin-bottom: 40px;
+}
+
+.url-input.dark {
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  background-color: rgba(255, 255, 255, 0.1);
+  color: #ffffff;
+}
+
+.url-input.light {
+  border: 1px solid rgba(0, 0, 0, 0.2);
+  background-color: rgba(0, 0, 0, 0.05);
+  color: #1a1a1a;
+}
+
+.url-input {
+  width: 100%;
+  max-width: 500px;
+  padding: 12px;
+  font-size: 16px;
+  border-radius: 8px;
+}
+
+.url-input::placeholder {
+  color: #a0a0a0;
+}
+
+.url-input:focus {
+  outline: none;
+}
+
+.url-input.dark:focus {
+  border-color: #bb86fc;
+  background-color: rgba(255, 255, 255, 0.15);
+}
+
+.url-input.light:focus {
+  border-color: #6200ea;
+  background-color: rgba(0, 0, 0, 0.1);
+}
+
+.get-summary-button {
+  padding: 12px 20px;
+  font-size: 16px;
+  font-weight: 500;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: transform 0.1s ease, opacity 0.3s ease;
+}
+
+.get-summary-button.dark {
+  background: linear-gradient(90deg, #bb86fc, #6200ea);
+  color: #ffffff;
+}
+
+.get-summary-button.light {
+  background: linear-gradient(90deg, #6200ea, #bb86fc);
+  color: #ffffff;
+}
+
+.get-summary-button:hover {
+  transform: scale(1.02);
+}
+
+.get-summary-button:disabled {
+  opacity: 0.6;
+  cursor: not-allowed;
+}
+
+.error-message {
+  text-align: center;
+  font-size: 14px;
+  font-weight: 500;
+  margin-bottom: 20px;
+}
+
+.error-message.dark {
+  color: #ff6b6b;
+}
+
+.error-message.light {
+  color: #d32f2f;
+}
+
+.bookmarks-section {
+  margin-top: 30px;
+}
+
+.bookmarks-header.dark {
+  color: #ffffff;
+}
+
+.bookmarks-header.light {
+  color: #1a1a1a;
+}
+
+.bookmarks-header {
+  font-size: 24px;
+  font-weight: 600;
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+.no-bookmarks.dark {
+  color: #a0a0a0;
+}
+
+.no-bookmarks.light {
+  color: #666666;
+}
+
+.no-bookmarks {
+  text-align: center;
+  font-size: 16px;
+}
+
+.bookmarks-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.bookmark-item.dark {
+  background-color: rgba(255, 255, 255, 0.05);
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+}
+
+.bookmark-item.light {
+  background-color: rgba(0, 0, 0, 0.05);
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+}
+
+.bookmark-item {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 15px;
+  border-radius: 10px;
+  margin-bottom: 10px;
+  transition: transform 0.2s ease;
+}
+
+.bookmark-item:hover {
+  transform: translateY(-2px);
+}
+
+.bookmark-info {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.favicon {
+  width: 16px;
+  height: 16px;
+}
+
+.bookmark-title.dark {
+  color: #e0e0e0;
+}
+
+.bookmark-title.light {
+  color: #333333;
+}
+
+.bookmark-title {
+  font-size: 16px;
+}
+
+.bookmark-actions {
+  display: flex;
+  gap: 10px;
+}
+
+.view-summary-button,
+.delete-button {
+  padding: 8px 16px;
+  font-size: 14px;
+  font-weight: 500;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: transform 0.1s ease;
+}
+
+.view-summary-button.dark {
+  background: linear-gradient(90deg, #03dac6, #018786);
+  color: #ffffff;
+}
+
+.view-summary-button.light {
+  background: linear-gradient(90deg, #018786, #03dac6);
+  color: #ffffff;
+}
+
+.delete-button.dark {
+  background: linear-gradient(90deg, #ff6b6b, #ee4444);
+  color: #ffffff;
+}
+
+.delete-button.light {
+  background: linear-gradient(90deg, #ee4444, #ff6b6b);
+  color: #ffffff;
+}
+
+.view-summary-button:hover,
+.delete-button:hover {
+  transform: scale(1.05);
+}
+
+.summary-overlay.dark {
+  background: rgba(0, 0, 0, 0.5);
+}
+
+.summary-overlay.light {
+  background: rgba(0, 0, 0, 0.3);
+}
+
+.summary-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 1000;
+}
+
+.summary-modal.dark {
+  background-color: rgba(255, 255, 255, 0.1);
+  box-shadow: 0 8px 32px rgba(0, 0, 0, 0.3);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.summary-modal.light {
+  background-color: rgba(255, 255, 255, 0.9);
+  box-shadow: 0 8px 32px rgba(0, 0, 0, 0.1);
+  border: 1px solid rgba(0, 0, 0, 0.1);
+}
+
+.summary-modal {
+  padding: 30px;
+  border-radius: 10px;
+  backdrop-filter: blur(10px);
+  max-width: 500px;
+  width: 90%;
+  text-align: center;
+}
+
+.summary-title.dark {
+  color: #ffffff;
+}
+
+.summary-title.light {
+  color: #1a1a1a;
+}
+
+.summary-title {
+  font-size: 20px;
+  font-weight: 600;
+  margin-bottom: 15px;
+}
+
+.summary-content.dark {
+  color: #e0e0e0;
+}
+
+.summary-content.light {
+  color: #333333;
+}
+
+.summary-content {
+  font-size: 16px;
+  margin-bottom: 20px;
+  text-align: left;
+}
+
+.close-button {
+  padding: 10px 20px;
+  font-size: 14px;
+  font-weight: 500;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: transform 0.1s ease;
+}
+
+.close-button.dark {
+  background: linear-gradient(90deg, #bb86fc, #6200ea);
+  color: #ffffff;
+}
+
+.close-button.light {
+  background: linear-gradient(90deg, #6200ea, #bb86fc);
+  color: #ffffff;
+}
+
+.close-button:hover {
+  transform: scale(1.02);
+}
+
+@media (max-width: 768px) {
+  .dashboard-header {
+    padding: 10px 20px;
+  }
+
+  .logo {
+    font-size: 20px;
+  }
+
+  .toggle-button,
+  .logout-button {
+    padding: 6px 12px;
+    font-size: 12px;
+  }
+
+  .welcome-text {
+    font-size: 16px;
+  }
+
+  .url-form {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .url-input {
+    max-width: 100%;
+    font-size: 14px;
+    padding: 10px;
+  }
+
+  .get-summary-button {
+    font-size: 14px;
+    padding: 10px 16px;
+  }
+
+  .error-message {
+    font-size: 12px;
+  }
+
+  .bookmarks-header {
+    font-size: 20px;
+  }
+
+  .bookmark-item {
+    padding: 10px;
+  }
+
+  .bookmark-title {
+    font-size: 14px;
+  }
+
+  .view-summary-button,
+  .delete-button {
+    padding: 6px 12px;
+    font-size: 12px;
+  }
+
+  .summary-modal {
+    padding: 20px;
+  }
+
+  .summary-title {
+    font-size: 18px;
+  }
+
+  .summary-content {
+    font-size: 14px;
+  }
+}
