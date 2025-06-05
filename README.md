@@ -3,9 +3,12 @@
 
 **SmartSnip** is a **modern, visually stunning** web application built with React for bookmarking URLs, tagging them, and viewing **AI-generated summaries**. The application features a sleek, **pitch-black interface** with glowing titles, smooth Framer Motion animations, and an interactive **particle background** powered by tsParticles. It includes 🔐 user authentication (login/register) and a 🧰 dashboard for managing bookmarks — all styled with ⚡ **Tailwind CSS** and elegant **glassmorphism** effects.
 
-👉 **Live Demo**: [https://smart-snip.vercel.app/](https://smart-snip.vercel.app/)  
-⚠️ **Note**: The backend is hosted on **Render's free tier**, so it might take **up to a minute to restart** if idle. Please wait a moment after opening the demo.
+---
 
+## 🔴 Live
+👉 **Access the App**: [https://smart-snip.vercel.app/](https://smart-snip.vercel.app/)  
+⚠️ *Note: The backend is hosted on Render's free tier. If inactive, it may take up to 1 minute to wake up.*
+---
 ---
 
 ## 📚 Table of Contents
