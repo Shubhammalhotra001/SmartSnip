@@ -7,7 +7,9 @@
 
 ## 🔴 Live
 👉 **Access the App**: [https://smart-snip.vercel.app/](https://smart-snip.vercel.app/)  
-⚠️ *Note: The backend is hosted on Render's free tier. If inactive, it may take up to 1 minute to wake up.*
+🕒 *Note: The backend is hosted on Render’s free tier. It may take up to **1 minute** to wake up.*
+
+
 ---
 ---
 
