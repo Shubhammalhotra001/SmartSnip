@@ -4,8 +4,8 @@ import axios from "axios";
 const URL = process.env.SERVER_URL ;
 
 export const keepServerAlive = () => {
-  // Runs every 15 minutes
-  cron.schedule("*/15 * * * *", async () => {
+  // Runs every 10 minutes
+  cron.schedule("*/10 * * * *", async () => {
     console.log("⏳ Cron Ping Running - keeping server awake");
 
     try {
