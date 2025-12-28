@@ -6,9 +6,14 @@ const helmet = require('helmet');
 const connectDB = require('./config/db');
 const authRoutes = require('./routes/auth');
 const bookmarkRoutes = require('./routes/bookmark');
+const { keepServerAlive } = require("./cron/serverRunning");
+
 
 // Connect to MongoDB
 connectDB();
+
+// Cron Init (runs in background)
+keepServerAlive();
 
 const app = express();
 
